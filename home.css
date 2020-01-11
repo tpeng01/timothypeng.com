@@ -1,5 +1,6 @@
 body {
   font-family: 'Barlow Condensed', sans-serif;
+  cursor: default;
 }
 
 /* START Bootstrap Navbar + media query */
