@@ -5,32 +5,32 @@ body {
 
 /* START Bootstrap Navbar + media query */
 
-.nav-link {
+header .nav-link {
   margin-left: 40px;
 }
 
-nav a {
+header nav a {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 2em;
 }
 
-.navbar-brand {
+header .navbar-brand {
   font-size: 2em;
 }
 
 @media only screen and (max-width: 576px) {
-  .navbar-nav {
+  header .navbar-nav {
     display: flex;
     margin: 0 auto;
   }
 
-  .nav-item {
+  header .nav-item {
+    display: flex;
     margin: 0 auto;
   }
 
-  .navbar-brand {
+  header .navbar-brand {
     display: flex;
-    margin: 0 auto;
   }
 }
 /* END Bootstrap Navbar + media query */
@@ -38,9 +38,9 @@ nav a {
 /* START welcome banner */
 #welcome-section {
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: flex-end;
+  height: 50vh;
+  justify-content: flex-end; /* vertical location in banner */
+  align-items: flex-end; /* horizontal location in banner */
   background-image: url("/Media/tim-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -54,16 +54,17 @@ nav a {
   margin-right: 10px;
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: right; /* text alignment like using Microsoft Word */
   font-size: 2em;
+  color: #ffffff;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 681px) {
   #welcome-section {
     display: flex;
-    height: 100vh;
+    height: 50vh;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     background-image: url("/Media/tim-2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +72,15 @@ nav a {
     color: #ffffff;
     font-family: 'Barlow Condensed', sans-serif;
     flex-direction: column;
-    padding-top: 276px;
+  }
+
+  .welcome-text {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* text alignment like using Microsoft Word */
+    font-size: 2em;
+    color: #ffffff;
   }
 }
 /* END welcome banner */
@@ -88,56 +97,42 @@ nav a {
 
 .projects-grid {
   display: grid;
+  flex-wrap: wrap;
   align-items: space-evenly;
   justify-content: center;
   grid-template-columns: repeat(3, 200px);
-  grid-gap: 100px;
+  grid-gap: 50px;
 }
 
-.project-tile {
-  height: 100px;
-  width: 100px;
+.project-tile img {
+  height: 200px;
+  width: 200px;
 }
 
-@media only screen and (max-width: 807px) {
+@media only screen and (max-width: 750px) {
   .projects-grid {
     display: grid;
     flex-direction: column;
-    align-items: center;
+    align-items: space-evenly;
     justify-content: center;
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(2, 200px);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
   }
 }
 
 /* END Projects */
 
-/* contact info */
+/* Contact section */
+footer {
+  margin-top: 100px
+}
 
-#external-links {
+#contact-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #eeeeee;
-  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 10px;
 }
 
-.contact-links {
-  font-size: xx-large;
-  display: flex;
-}
-
-a .contact-link {
-  color: #000000;
-}
-
-.link-text {
-  color: black;
-}
-
-@media only screen and (max-width: 576px) {
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/* end contact info */
+/* END Contact section */

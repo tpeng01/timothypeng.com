@@ -1,7 +1,7 @@
 //variables, functions
 
 let navbarMobile = function() {
-  let pageWidth = parseInt(document.body.offsetWidth);
+  let pageWidth = 0;
 
   $(window).resize(function() {
     pageWidth = parseInt(document.body.offsetWidth);
@@ -11,8 +11,8 @@ let navbarMobile = function() {
       $('#navbar').addClass('sticky-top')
     }
   })
-  
 };
 
 navbarMobile();
+
 

@@ -17,16 +17,23 @@
 <body>
 
   <!-- Bootstrap Navbar -->
+  <header>
   <nav class="navbar navbar-light bg-light navbar-expand-sm sticky-top" id="navbar">
     <a class="navbar-brand" href="#welcome-section">T P E N G</a>
-    <div class="collapse navbar-collapse d-flex justify-content-end align-items-start" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#welcome-section">About<span class="sr-only">(current)</span></a>
+  <!-- Collapse Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapse Button -->
+    <div class="collapse navbar-collapse navbar-nav d-flex justify-content-end align-items-start" id="collapsibleNavbar">
+      <div class="navbar-nav collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <a class="nav-item nav-link" href="#welcome-section">About</a>
         <a class="nav-item nav-link" href="#projects">Projects</a>
         <a class="nav-item nav-link" href="#external-links">Contact</a>
       </div>
     </div>
   </nav>
+  </header>
   <!-- Bootstrap Navbar -->
 
   <!-- Welcome banner -->
@@ -43,23 +50,30 @@
   <section id="projects">
     <h2>a few small projects</h2>
     <div class="projects-grid">
-      <a href="https://codepen.io/tpeng01/full/OJPVJVE" class="project-tile">Heart of Iron: The Tony Stark Story</a>
-      <a href="https://codepen.io/tpeng01/full/GRgNvGm" class="project-tile">Peng's Pies</a>
-      <a href="https://codepen.io/tpeng01/full/VwYLgYo" class="project-tile">Beginner's Exercise Survey</a>
+      <a href="https://codepen.io/tpeng01/full/OJPVJVE" class="project-tile" target="_blank"><img src="/Media/heart-of-iron.jpg"></a>
+      <a href="https://codepen.io/tpeng01/full/GRgNvGm" class="project-tile" target="_blank"><img src="/Media/pies.jpg"></a>
+      <a href="https://codepen.io/tpeng01/full/VwYLgYo" class="project-tile" target="_blank"><img src="/Media/survey.jpg"></a>
     </div>
   </section>
   <!-- END projects section -->
 
-  <!--Link to GitHub-->
-  <section id="external-links">
-    <h2>reach me here</h2>
-    <div class="contact-links">
-      <a href="https://www.instagram.com/tp3ng/" class="nav-link" target="_blank"><i class="fas fa-camera-retro contact-link"></i> <span class="link-text">Instagram</span></a>
-      <a href="https://github.com/tpeng01" id="profile-link" target="_blank" class="nav-link"><i class="fab fa-github-square contact-link"></i> <span class="link-text">Github</span class="link-text"></a>
-      <a href="mailto:tpeng01@gmail.com" class="nav-link"><i class="fas fa-envelope contact-link"></i> <span class="link-text">Gmail</span class="link-text"></a>
-      </div>
-  </section>
-  <!--Link to GitHub-->
-  <script type ="text/javascript" src="home.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <nav class="navbar fixed-bottom navbar-light bg-dark" id="contact-links">
+      <a href="https://github.com/tpeng01" target="_blank" class="nav-item nav-link"><i class="fab fa-github-square fa-2x text-light"></i></a>
+      <a href="https://instagram.com/tp3ng" target="_blank" class="nav-item nav-link"><i class="fas fa-camera-retro fa-2x text-light"></i></a>
+      <a href="mailto:t.peng01@gmail.com" target="_blank" class="nav-item nav-link"><i class="fas fa-envelope fa-2x text-light"></i></a>
+    </nav>
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- JavaScript Scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="home.js"></script>
+
+  <!-- end JavaScript Scripts-->
 </body>
 </html>
